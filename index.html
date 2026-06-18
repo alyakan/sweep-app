@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweep — a fast, private Mac cleaner</title>
+  <meta name="description" content="Sweep reclaims disk space on your Mac by clearing caches, logs, downloads, and developer junk. Runs entirely on your machine — your files never leave your Mac. $10/year." />
+  <link rel="icon" href="assets/icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Sweep — a fast, private Mac cleaner" />
+  <meta property="og:description" content="Reclaim disk space on your Mac. Runs entirely offline — your files never leave your Mac. $10/year." />
+  <meta property="og:image" content="assets/icon.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Lemon Squeezy checkout overlay. Loads lemon.js so Buy buttons open the
+       overlay instead of a full page redirect. Harmless until you add a store. -->
+  <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top">
+      <img src="assets/icon.png" alt="Sweep icon" width="32" height="32" />
+      <span>Sweep</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#pricing">Pricing</a>
+      <a class="btn btn-ghost" href="https://github.com/alyakan/sweep-app/releases/latest">Download</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <img class="hero-icon" src="assets/icon.png" alt="Sweep app icon" width="120" height="120" />
+      <h1>Reclaim your Mac's disk space —<br /><span class="grad">privately.</span></h1>
+      <p class="lede">
+        Sweep clears out caches, logs, downloads, and developer junk, and shows you
+        your biggest space hogs. It runs entirely on your machine — nothing is
+        uploaded, tracked, or shared. Ever.
+      </p>
+      <div class="cta-row">
+        <!-- Points at the latest GitHub Release of this repo (sweep-app). -->
+        <a class="btn btn-primary" href="https://github.com/alyakan/sweep-app/releases/latest">Download for macOS</a>
+        <!-- TODO: replace BUY_URL with your Lemon Squeezy product/checkout URL.
+             With lemon.js loaded and the class below, it opens as an overlay. -->
+        <a class="btn btn-secondary lemonsqueezy-button" href="BUY_URL">Buy — $10/year</a>
+      </div>
+      <p class="hero-note">14-day free trial · macOS 14 or later · Apple notarized</p>
+
+      <!-- App preview. Drop a real screenshot at assets/screenshot.png and it
+           replaces this mock automatically. -->
+      <div class="preview">
+        <div class="window">
+          <div class="titlebar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+          <div class="window-body">
+            <div class="stat">12.4 GB <span>reclaimable</span></div>
+            <div class="cards">
+              <div class="card"><b>Caches &amp; Logs</b><span>4.8 GB</span></div>
+              <div class="card"><b>Downloads &amp; Trash</b><span>3.1 GB</span></div>
+              <div class="card"><b>Developer Junk</b><span>3.9 GB</span></div>
+              <div class="card"><b>Large &amp; Old Files</b><span>0.6 GB</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <h2>What Sweep cleans</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>🧹 Caches &amp; logs</h3>
+          <p>App caches and log files that pile up in protected system folders and quietly eat gigabytes.</p>
+        </div>
+        <div class="feature">
+          <h3>📥 Downloads &amp; Trash</h3>
+          <p>Old installers and forgotten downloads, plus what's already sitting in your Trash.</p>
+        </div>
+        <div class="feature">
+          <h3>🛠️ Developer junk</h3>
+          <p>Xcode DerivedData, iOS simulators, <code>node_modules</code>, and other build artifacts.</p>
+        </div>
+        <div class="feature">
+          <h3>📦 Large, old &amp; duplicate files</h3>
+          <p>Find the biggest and oldest files — and exact duplicates — across your content folders.</p>
+        </div>
+        <div class="feature">
+          <h3>📊 Storage insight</h3>
+          <p>Drill into what's actually using your disk, including the System Data even Sweep can't touch.</p>
+        </div>
+        <div class="feature">
+          <h3>↩️ Recoverable by design</h3>
+          <p>You review every item, and Sweep moves things to the Trash after two confirmations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVACY -->
+    <section id="privacy" class="section privacy">
+      <h2>Your files never leave your Mac</h2>
+      <p class="privacy-lede">
+        Most "cleaner" apps are bloated, expensive, and want an account. Sweep is the
+        opposite. The cleaning engine has <strong>no network access at all</strong> —
+        there's nothing to upload because nothing is ever sent anywhere. The only time
+        Sweep touches the internet is to verify your license.
+      </p>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <h2>Simple, honest pricing</h2>
+      <div class="price-card">
+        <div class="price">$10<span>/year</span></div>
+        <p class="price-sub">One fair price from an indie developer. No upsells, no "pro" tier, no data harvesting.</p>
+        <ul class="price-list">
+          <li>Every feature, fully unlocked</li>
+          <li>14-day free trial — no card required to start</li>
+          <li>All updates included while subscribed</li>
+          <li>Works offline; only license checks use the network</li>
+        </ul>
+        <a class="btn btn-primary lemonsqueezy-button" href="BUY_URL">Buy Sweep — $10/year</a>
+        <a class="btn btn-ghost" href="https://github.com/alyakan/sweep-app/releases/latest">Try it free first</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <img src="assets/icon.png" alt="Sweep icon" width="24" height="24" />
+      <span>Sweep</span>
+    </div>
+    <nav class="footer-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="refund.html">Refunds</a>
+      <!-- TODO: set your real support email -->
+      <a href="mailto:aly.yakan@gmail.com">Support</a>
+    </nav>
+    <p class="copyright">© 2026 Sweep. A local-only Mac app. Your files never leave your Mac.</p>
+  </footer>
+</body>
+</html>
