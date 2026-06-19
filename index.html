@@ -44,9 +44,7 @@
       <div class="cta-row">
         <!-- Points at the latest GitHub Release of this repo (sweep-app). -->
         <a class="btn btn-primary" href="https://github.com/alyakan/sweep-app/releases/latest">Download for macOS</a>
-        <!-- TODO: replace BUY_URL with your Lemon Squeezy product/checkout URL.
-             With lemon.js loaded and the class below, it opens as an overlay. -->
-        <a class="btn btn-secondary lemonsqueezy-button" href="BUY_URL">Buy — $10/year</a>
+        <a class="btn btn-secondary" href="#pricing">See pricing</a>
       </div>
       <p class="hero-note">14-day free trial · macOS 14 or later · Apple notarized</p>
 
@@ -101,18 +99,45 @@
     <!-- PRICING -->
     <section id="pricing" class="section">
       <h2>Simple, honest pricing</h2>
-      <div class="price-card">
-        <div class="price">$10<span>/year</span></div>
-        <p class="price-sub">One fair price from an indie developer. No upsells, no "pro" tier, no data harvesting.</p>
-        <ul class="price-list">
-          <li>Every feature, fully unlocked</li>
-          <li>14-day free trial — no card required to start</li>
-          <li>All updates included while subscribed</li>
-          <li>Works offline; only license checks use the network</li>
-        </ul>
-        <a class="btn btn-primary lemonsqueezy-button" href="BUY_URL">Buy Sweep — $10/year</a>
-        <a class="btn btn-ghost" href="https://github.com/alyakan/sweep-app/releases/latest">Try it free first</a>
+      <p class="pricing-intro">
+        Start with a 14-day free trial — no card required. Then pick whatever suits you.
+        Either way you get every feature, and your files always stay on your Mac.
+      </p>
+      <div class="price-grid">
+
+        <!-- Annual subscription -->
+        <div class="price-card">
+          <div class="plan-name">Annual</div>
+          <div class="price">$10<span>/year</span></div>
+          <p class="price-sub">Fair, ongoing support for an indie developer.</p>
+          <ul class="price-list">
+            <li>Every feature, fully unlocked</li>
+            <li>All updates while subscribed</li>
+            <li>Cancel anytime</li>
+          </ul>
+          <!-- TODO: replace BUY_URL_ANNUAL with your Lemon Squeezy annual checkout URL. -->
+          <a class="btn btn-secondary lemonsqueezy-button" href="BUY_URL_ANNUAL">Subscribe — $10/year</a>
+        </div>
+
+        <!-- Lifetime one-time purchase -->
+        <div class="price-card featured">
+          <div class="badge">Best value</div>
+          <div class="plan-name">Lifetime</div>
+          <div class="price">$30<span>once</span></div>
+          <p class="price-sub">Pay once, own it forever. No subscription.</p>
+          <ul class="price-list">
+            <li>Every feature, fully unlocked</li>
+            <li>Every update, forever</li>
+            <li>One payment, no renewals</li>
+          </ul>
+          <!-- TODO: replace BUY_URL_LIFETIME with your Lemon Squeezy lifetime checkout URL. -->
+          <a class="btn btn-primary lemonsqueezy-button" href="BUY_URL_LIFETIME">Buy Lifetime — $30</a>
+        </div>
+
       </div>
+      <p class="pricing-foot">
+        <a href="https://github.com/alyakan/sweep-app/releases/latest">Or download and try it free first →</a>
+      </p>
     </section>
   </main>
 

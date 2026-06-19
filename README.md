@@ -14,6 +14,7 @@ The app's source lives in a separate private repository.
   `main` branch root.
 - To ship a new app version: build the notarized DMG, then publish it as a new Release
   (the Download button links to `releases/latest`).
-- `BUY_URL` in `index.html` is a placeholder — replace it with the Lemon Squeezy
-  checkout URL once the store is set up.
+- `BUY_URL_ANNUAL` and `BUY_URL_LIFETIME` in `index.html` are placeholders — replace
+  them with the Lemon Squeezy checkout URLs for the $10/yr and $30 lifetime variants
+  once the store is set up.
 - Review `privacy.html`, `terms.html`, and `refund.html` before going live.
