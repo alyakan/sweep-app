@@ -14,7 +14,7 @@ The app's source lives in a separate private repository.
   `main` branch root.
 - To ship a new app version: build the notarized DMG, then publish it as a new Release
   (the Download button links to `releases/latest`).
-- `BUY_URL_ANNUAL` and `BUY_URL_LIFETIME` in `index.html` are placeholders — replace
-  them with the Lemon Squeezy checkout URLs for the $10/yr and $30 lifetime variants
-  once the store is set up.
+- `BUY_URL_ANNUAL` ($9.99/yr) is wired to the Lemon Squeezy checkout. `BUY_URL_LIFETIME`
+  ($29.99) is still a placeholder — replace it with the lifetime checkout URL once that
+  product is set up. Append `?embed=1` to checkout URLs so they open as an overlay.
 - Review `privacy.html`, `terms.html`, and `refund.html` before going live.
