@@ -14,7 +14,9 @@ The app's source lives in a separate private repository.
   `main` branch root.
 - To ship a new app version: build the notarized DMG, then publish it as a new Release
   (the Download button links to `releases/latest`).
-- Both checkout buttons are wired to Lemon Squeezy ($9.99/yr annual, $29.99 lifetime),
-  with `?embed=1` so they open as an overlay. The 14-day trial is handled in the app
-  (no card required), not via a Lemon Squeezy subscription trial.
+- Both checkout buttons link to Lemon Squeezy's hosted checkout ($9.99/yr annual,
+  $29.99 lifetime), opening in a new tab. We deliberately do NOT use the embedded
+  overlay (`?embed=1` + lemon.js): the embed runs Stripe in an iframe, and browsers
+  blocking third-party storage break the payment step ("a processing error occurred").
+  The 14-day trial is handled in the app (no card required), not via a Lemon Squeezy trial.
 - Review `privacy.html`, `terms.html`, and `refund.html` before going live.
